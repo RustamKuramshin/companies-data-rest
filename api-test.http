@@ -1,0 +1,38 @@
+### Создание компании
+POST localhost:8080/companies
+Content-Type: application/json
+
+{
+  "name": "Инфратех",
+  "inn": "1234567890",
+  "kpp": "123456789"
+}
+
+### Получение списка всех компаний
+GET localhost:8080/companies
+Accept: application/json
+
+### Получение компании по UUID
+GET localhost:8080/companies/c301e99b-56e7-4c1f-a239-0adb5fa423ec
+Accept: application/json
+
+### Изменение имени компании по UUID
+PATCH localhost:8080/companies/c301e99b-56e7-4c1f-a239-0adb5fa423ec
+Content-Type: application/json
+
+{
+  "name": "Супертех"
+}
+
+### Изменение компании по UUID
+PUT localhost:8080/companies/c301e99b-56e7-4c1f-a239-0adb5fa423ec
+Content-Type: application/json
+
+{
+  "name": "МегаСупертех",
+  "inn": "0987654321",
+  "kpp": "987654321"
+}
+
+### Удаление компании по UUID
+DELETE localhost:8080/companies/c301e99b-56e7-4c1f-a239-0adb5fa423ec
