@@ -12,8 +12,8 @@ Content-Type: application/json
 GET localhost:8080/companies?page=1&size=5
 Accept: application/json
 
-### Получение компании по UUID
-GET localhost:8080/companies/cbf309f1-21e8-47bc-a42b-b91a083011fe
+### Получение компании по UUID с проекцией
+GET localhost:8080/companies/2715e481-dff6-4405-ad5c-fb14aa07bd7c?projection=companyInfo
 Accept: application/json
 
 ### Изменение имени компании по UUID
