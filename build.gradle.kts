@@ -24,12 +24,22 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-rest")
     implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-hateoas")
+
+    // QueryDSL
+    implementation("com.querydsl:querydsl-core:5.0.0")
+    implementation("com.querydsl:querydsl-jpa:5.0.0")
 
     implementation("org.liquibase:liquibase-core")
     implementation("org.springframework.data:spring-data-rest-hal-explorer")
     compileOnly("org.projectlombok:lombok")
     runtimeOnly("io.micrometer:micrometer-registry-prometheus")
     runtimeOnly("org.postgresql:postgresql")
+
+    // QueryDSL
+    annotationProcessor("com.querydsl:querydsl-apt:5.0.0:general")
+    annotationProcessor ("org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.2.Final")
+    annotationProcessor("javax.annotation:javax.annotation-api:1.3.2")
+
     annotationProcessor("org.projectlombok:lombok")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
 }

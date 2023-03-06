@@ -3,13 +3,13 @@ POST localhost:8080/companies
 Content-Type: application/json
 
 {
-  "name": "Инфратех",
-  "inn": "12345678901",
+  "name": "МТест",
+  "inn": "1234567890",
   "kpp": "123456789"
 }
 
 ### Получение списка всех компаний с пагинацией
-GET localhost:8080/companies?page=1&size=5
+GET localhost:8080/companies?nameLen=1
 Accept: application/json
 
 ### Получение компании по UUID с проекцией

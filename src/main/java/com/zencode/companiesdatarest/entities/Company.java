@@ -1,6 +1,8 @@
 package com.zencode.companiesdatarest.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.querydsl.core.annotations.QueryEntity;
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,8 +18,13 @@ import java.util.List;
 
 @Getter
 @Setter
+@QueryEntity
 @Entity(name = "company")
 public class Company extends BaseEntity {
+
+    @Transient
+    @Getter(value = AccessLevel.PRIVATE)
+    private Integer nameLen;
 
     @NotNull
     @Column(name = "name")
