@@ -47,3 +47,17 @@ Accept: application/json
 ### Получение схемы компании
 GET http://localhost:8080/profile/companies
 Accept: application/json
+
+### Создание департамента
+POST localhost:8080/departments
+Content-Type: application/json
+
+{
+  "name": "Отдел backend-разработки"
+}
+
+### Линковка отдела к компании
+PUT http://localhost:8080/departments/ed16b778-8d93-4a10-9029-adc6b7e7dad8/company
+Content-Type: text/uri-list
+
+http://localhost:8080/companies/2715e481-dff6-4405-ad5c-fb14aa07bd7c
