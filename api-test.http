@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
   "name": "Инфратех",
-  "inn": "1234567890",
+  "inn": "12345678901",
   "kpp": "123456789"
 }
 

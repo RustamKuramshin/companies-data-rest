@@ -2,6 +2,7 @@ package com.zencode.companiesdatarest.entities;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
