@@ -13,7 +13,7 @@ GET localhost:8080/companies
 Accept: application/json
 
 ### Получение компании по id с проекцией
-GET localhost:8080/companies/2715e481-dff6-4405-ad5c-fb14aa07bd7c?projection=companyInfo
+GET localhost:8080/companies/1?projection=companyInfo
 Accept: application/json
 
 ### Изменение имени компании по id

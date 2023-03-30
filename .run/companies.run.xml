@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="companies" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
     <option name="ACTIVE_PROFILES" value="h2" />
-    <module name="com.zen-code.companies-data-rest.main" />
+    <module name="companies-data-rest.main" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.zencode.companiesdatarest.CompaniesDataRestApplication" />
     <extension name="coverage">
       <pattern>
