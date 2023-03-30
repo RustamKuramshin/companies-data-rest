@@ -8,23 +8,23 @@ Content-Type: application/json
   "kpp": "123456789"
 }
 
-### Получение списка всех компаний с пагинацией
-GET localhost:8080/companies?nameLen=1
+### Получение списка всех компаний
+GET localhost:8080/companies
 Accept: application/json
 
-### Получение компании по UUID с проекцией
+### Получение компании по id с проекцией
 GET localhost:8080/companies/2715e481-dff6-4405-ad5c-fb14aa07bd7c?projection=companyInfo
 Accept: application/json
 
-### Изменение имени компании по UUID
-PATCH localhost:8080/companies/cbf309f1-21e8-47bc-a42b-b91a083011fe
+### Изменение имени компании по id
+PATCH localhost:8080/companies/528d4c61-6cda-4d12-9a0a-89adf91e0651
 Content-Type: application/json
 
 {
   "name": "Супертех"
 }
 
-### Изменение компании по UUID
+### Изменение компании по id
 PUT localhost:8080/companies/cbf309f1-21e8-47bc-a42b-b91a083011fe
 Content-Type: application/json
 
@@ -34,7 +34,7 @@ Content-Type: application/json
   "kpp": "987654321"
 }
 
-### Удаление компании по UUID
+### Удаление компании по id
 DELETE localhost:8080/companies/cbf309f1-21e8-47bc-a42b-b91a083011fe
 
 ### Получение инфы о API

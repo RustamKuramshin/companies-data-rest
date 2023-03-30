@@ -9,11 +9,9 @@ import org.springframework.data.querydsl.binding.QuerydslBindings;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-import java.util.UUID;
-
 @RepositoryRestResource(excerptProjection = CompanyInfo.class)
 public interface CompanyRepository extends
-        PagingAndSortingRepository<Company, UUID>,
+        PagingAndSortingRepository<Company, Long>,
         QuerydslPredicateExecutor<Company>,
         QuerydslBinderCustomizer<QCompany> {
 

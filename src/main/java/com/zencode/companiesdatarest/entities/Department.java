@@ -19,7 +19,7 @@ public class Department extends BaseEntity {
     private String name;
 
     @ManyToOne
-    @JoinColumn(name = "company_uuid")
+    @JoinColumn(name = "company_id")
     private Company company;
 
 }

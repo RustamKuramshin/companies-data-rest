@@ -1,7 +1,6 @@
 package com.zencode.companiesdatarest.configuration.hal;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.RepresentationModel;
 import org.springframework.hateoas.mediatype.hal.Jackson2HalModule;
